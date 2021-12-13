@@ -35,8 +35,8 @@
 
 ### リソース
 
-- `base.htm`: 全htmファイル共有部分
-- `base.php`: 全phpファイル共通部分
+- `base.htm`: htmファイル共有部分
+- `base.php`: phpファイル共通部分
 - `images`: 画像ファイル格納用ディレクトリ
 
     ```
@@ -122,3 +122,88 @@
 - `sample12-12.php`: リストボックスの選択値を取得する
 - `sample12-13.php`: 複数行テキスト領域への入力値を取得する
 - `sample12-14.php`: クリックされたボタンを調べる
+
+## 第3回
+
+### リソース
+
+- `base.htm`: htmファイル共通部分
+- `base.php`: phpファイル共通部分
+- `cssfile_1.css`: --+
+- `cssfile_2.css`: --+-- `sample12-30.php`で利用するCSS
+- `cssfile_3.css`: --+
+- `images`: 画像ファイル格納用ディレクトリ
+
+    ```
+    images
+    ├── upf_backdoor.php?.jpg
+    ├── upf_partyparrot.gif
+    ├── upf_photo01.jpg
+    ├── upf_photo02.jpg
+    ├── upf_photo03.jpg
+    ├── upf_photo04.jpg
+    ├── upf_photo05.jpg
+    ├── upf_photo06.jpg
+    ├── upf_photo07.jpg
+    └── upf_photo08.jpg
+    ```
+
+- `index.htm`: 共通して利用するhtmファイル
+
+### 受け取ったデータを確認・加工する
+
+- `sample12-15.php`: HTMLタグを除去する
+- `sample12-16.php`: HTMLの特殊文字を実体参照に置換する
+- `sample12-17.php`: 改行タグを追加する
+- `sample12-18.php`: エスケープ文字を除去する
+- `sample12-19.php`: 受け取ったデータの妥当性を確認する
+- `sample12-20.php`: 受け取ったデータの未入力を確認する
+- `sample12-21.php`: 受け取ったデータを次ページに渡す
+- `sample12-21-2.php`: `sample12-21.php`からの遷移先
+- `sample12-22.php`: 受け取ったデータを数値として処理する
+- `sample12-23.php`: URLエンコードされたデータを元に戻す
+- `sample12-24.php`: 文字列をURLエンコードする
+
+### 高度なフォーム処理
+
+- `sample12-25.php`: ファイルをアップロードする
+- `sample12-26.php`: 複数のファイルをまとめてアップロードする
+- `sample12-27.php`: 別ページへ強制ジャンプさせる
+- `sample12-28.php`: 検索エンジンサイトにキーワードを渡す
+- `sample12-29.php`: フォントサイズを動的に切り替える
+- `sample12-30.php`: ページのスタイル（CSS）を動的に切り替える
+- `sample12-31.php`: 2つのリストボックスのリストを連動させる
+- `sample12-32.php`: どのページから呼ばれたか確認する
+- `sample12-33.php`: アクセスユーザのブラウザ情報を調べる
+- `sample12-34.php`: ユーザ環境によって表示するページを切り替える
+- `sample12-34_Cr.htm`: `sample12-34.php`のChrome用ページ
+- `sample12-34_IE.htm`: `sample12-34.php`のInternet Explorer用ページ
+- `sample12-34_NN.htm`: `sample12-34.php`のFirefox用ページ
+- `sample12-34_Sf.htm`: `sample12-34.php`のSafari用ページ
+
+### クッキーの基本操作
+
+- `sample13-01.php`: クッキーにデータを保存する
+- `sample13-02.php`: クッキーからデータを読み込む
+- `sample13-03.php`: クッキーのデータを削除する
+
+### クッキーの応用
+
+- `sample13-04.php`: フォームへの前回入力値を自動入力する
+- `sample13-05.php`: カートに入れる仕組みを作る（クッキー版）
+
+### セッション処理の基本
+
+- `sample14-01.php`: セッションを開始する
+- `sample14-02.php`: セッション変数にデータを保存する
+- `sample14-03.php`: セッション変数のデータを読み込む
+- `sample14-04.php`: セッション変数を破棄する
+- `sample14-05.php`: セッション変数が設定されているか調べる
+- `sample14-06.php`: セッションを終了する
+- `sample14-07.php`: セッション名を変更する
+- `sample14-08.php`: セッションIDを変更する
+
+### セッション処理の応用
+
+- `sample14-09.php ・ sample14-09-2.php`: セッション変数を使ってユーザIDを使い回す
+- `sample14-10.php ・ sample14-10-2.php`:  カートに入れる仕組みを作る（セッション版）
