@@ -41,41 +41,41 @@
 
     ```
     images/
-      ├── asf_logo_wide.gif
-      ├── counter0.gif
-      ├── counter1.gif
-      ├── counter2.gif
-      ├── counter3.gif
-      ├── counter4.gif
-      ├── counter5.gif
-      ├── counter6.gif
-      ├── counter7.gif
-      ├── counter8.gif
-      ├── counter9.gif
-      ├── gihyo.gif
-      ├── gihyo.png
-      ├── image1.gif
-      ├── image2.gif
-      ├── image3.gif
-      ├── image4.gif
-      ├── image5.gif
-      ├── image6.gif
-      ├── image7.gif
-      ├── image8.gif
-      ├── image9.gif
-      ├── mysql_100x52-64.gif
-      ├── photo01.jpg
-      ├── photo02.jpg
-      ├── photo03.jpg
-      ├── photo04.jpg
-      ├── photo05.jpg
-      ├── photo06.jpg
-      ├── photo07.jpg
-      ├── photo08.jpg
-      ├── php.gif
-      ├── upf_apache_pb02.gif
-      ├── upf_photo07x2.jpg
-      └── upf_photo08x2.jpg
+    ├── asf_logo_wide.gif
+    ├── counter0.gif
+    ├── counter1.gif
+    ├── counter2.gif
+    ├── counter3.gif
+    ├── counter4.gif
+    ├── counter5.gif
+    ├── counter6.gif
+    ├── counter7.gif
+    ├── counter8.gif
+    ├── counter9.gif
+    ├── gihyo.gif
+    ├── gihyo.png
+    ├── image1.gif
+    ├── image2.gif
+    ├── image3.gif
+    ├── image4.gif
+    ├── image5.gif
+    ├── image6.gif
+    ├── image7.gif
+    ├── image8.gif
+    ├── image9.gif
+    ├── mysql_100x52-64.gif
+    ├── photo01.jpg
+    ├── photo02.jpg
+    ├── photo03.jpg
+    ├── photo04.jpg
+    ├── photo05.jpg
+    ├── photo06.jpg
+    ├── photo07.jpg
+    ├── photo08.jpg
+    ├── php.gif
+    ├── upf_apache_pb02.gif
+    ├── upf_photo07x2.jpg
+    └── upf_photo08x2.jpg
     ```
 
 ### 基本的な計算処理
@@ -264,3 +264,20 @@
 | Library | Version |
 | --- | --- |
 | Smarty | 3.1.33 |
+
+## 第5回
+
+### リソース
+
+- `init`: 初期化用SQLなど
+- `link`: オンラインリンク集
+
+```
+05
+├── init
+│   ├── config.php
+│   └── linkdata.sql
+└── link
+    ├── link.php
+    └── linkadmin.php
+```
