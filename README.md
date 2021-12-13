@@ -210,6 +210,9 @@
 
 ## 第4回
 
+### リソース
+
+- `my.conf`: 漢字コード(UTF-8mb4)を使用するための設定ファイル
 - `bbs`: インターネット掲示板(データ保存先ファイル版)
 - `bbs-db`: インターネット掲示板(データ保存先DB版)
 - `rss`: RSSリーダー
@@ -217,6 +220,7 @@
 
 ```
 04
+├── my.conf
 ├── bbs
 │   ├── bbs.php
 │   ├── bbs_data
@@ -249,6 +253,11 @@
     │   └── [compiled file]
     └── todo.php
 ```
+
+### Configure
+
+- `my.conf`を**/Applications/MAMP/conf/my.cnf**としてコピー
+- 各`templates_c`ディレクトリのパーミッションを書き込み可能に変更
 
 ### Require
 
