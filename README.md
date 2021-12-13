@@ -256,7 +256,7 @@
 
 ### Configure
 
-- `my.conf`を**/Applications/MAMP/conf/my.cnf**としてコピー
+- `my.conf`を **/Applications/MAMP/conf/my.cnf** としてコピー
 - 各`templates_c`ディレクトリのパーミッションを書き込み可能に変更
 
 ### Require
