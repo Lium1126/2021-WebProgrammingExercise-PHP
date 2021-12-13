@@ -207,3 +207,51 @@
 
 - `sample14-09.php ・ sample14-09-2.php`: セッション変数を使ってユーザIDを使い回す
 - `sample14-10.php ・ sample14-10-2.php`:  カートに入れる仕組みを作る（セッション版）
+
+## 第4回
+
+- `bbs`: インターネット掲示板(データ保存先ファイル版)
+- `bbs-db`: インターネット掲示板(データ保存先DB版)
+- `rss`: RSSリーダー
+- `todo`: ToDoリスト
+
+```
+04
+├── bbs
+│   ├── bbs.php
+│   ├── bbs_data
+│   │   └── [datafiles...]
+│   ├── smarty
+│   ├── style.css
+│   ├── templates
+│   │   └── bbs.html
+│   └── templates_c
+│       └── [compiled file]
+├── bbs-db
+│   ├── bbs_mysql.php
+│   ├── smarty
+│   ├── style.css
+│   ├── templates
+│   │   └── bbs.html
+│   └── templates_c
+│       └── [compiled file]
+├── rss
+│   ├── rss_reader.php
+│   └── style.css
+└── todo
+    ├── data
+    │   └── todo.txt
+    ├── smarty
+    ├── style.css
+    ├── templates
+    │   └── todo.html
+    ├── templates_c
+    │   └── [compiled file]
+    └── todo.php
+```
+
+### Require
+
+| Library | Version |
+| --- | --- |
+| Smarty | 3.1.33 |
