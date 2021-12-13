@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>サクッとTODO管理</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>サクッとTODO管理</h1>
+    <h2>締め切りオーバー</h2>
+
+    <ul class="todo-list">
+        {foreach from=$todo_over_list item=todo}
+        <li class="over">{$todo.title|escape} (~{$todo.date|escape}) </li>
+        {foreachelse}
+        <li>締め切りを過ぎたTODOはありません</li>
+        {/foreach}
+    </ul>
+
+    <h2>今日以降の締め切り</h2>
+
+    <ul class="todo-list">
+        {foreach from=$todo_upcoming_list item=todo}
+        <li class="upcoming">{$todo.title|escape} (~{$todo.date|escape}) </li>
+        {foreachelse}
+        <li>今後予定されているTODOはありません</li>
+        {/foreach}
+    </ul>
+
+</body>
+
+</html>

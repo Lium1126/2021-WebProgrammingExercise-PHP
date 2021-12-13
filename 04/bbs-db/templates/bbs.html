@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>サクッと掲示板(DB版)</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1>サクッと掲示板(DB版)</h1>
+
+	{* エラーメッセージを表示する処理 *}
+	{if $error_message}
+	<ul class="error-message">
+		{foreach from=$error_message item=message}
+		<li>{$message|escape}</li>
+		{/foreach}
+	</ul>
+	{/if}
+
+	<form method="post" action="{$smarty.server.SCRIPT_NAME}">
+		<table>
+			<tr>
+				<th>投稿者名</th>
+				<td><input type="text" name="name" size="30"></td>
+			</tr>
+			<tr>
+				<th>タイトル</th>
+				<td><input type="text" name="title" size="50"></td>
+			</tr>
+			<tr colspan="2">
+				<td colspan="2"><textarea name="body" cols="50" rows="5"></textarea></td>
+			</tr>
+		</table>
+		<input name="save" type="submit" value="投稿する">
+	</form>
+
+	<hr>
+
+	{* 掲示板データを表示する処理 *}
+	{foreach from=$bbs_list item=bbs}
+	<h2>{$bbs.title|escape}</h2>
+	<p>{$bbs.date|date_format:"%Y年%m月%e日 %H:%M:%S"|escape} / 投稿者：<strong>{$bbs.name|escape}</strong></p>
+	<p>{$bbs.body|escape|nl2br}</p>
+	{/foreach}
+
+</body>
+
+</html>
